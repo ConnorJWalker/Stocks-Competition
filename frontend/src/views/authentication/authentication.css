@@ -59,8 +59,25 @@ div.profile-picture {
     padding: 2px 0;
 }
 
+ul {
+    margin: 20px 0 25px;
+    list-style-position: inside;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+    overflow-y: auto;
+    margin-bottom: 30px;
+}
+
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+footer > div > button:first-of-type {
+    margin-right: 10px;
 }

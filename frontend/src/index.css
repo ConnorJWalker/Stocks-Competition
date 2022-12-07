@@ -30,6 +30,7 @@ button {
     background: none;
     border: 1px solid #707070;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 button.btn-pink {

@@ -8,6 +8,7 @@ export default function Signup(props: any) {
     function renderSignupForm() {
         return (
             <div className="form-container">
+                <h1>Sign Up</h1>
                 <div className="form-group">
                     { renderProfilePicture() }
                     <div className="text-input-group">

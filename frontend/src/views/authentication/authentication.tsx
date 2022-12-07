@@ -10,7 +10,7 @@ export default function Authentication() {
 
     return (
         <div className="auth-container">
-            { showSignup ? <Signup SetShowSignup={setShowSignup} /> : <Login /> }
+            { showSignup ? <Signup SetShowSignup={setShowSignup} /> : <Login SetShowSignup={setShowSignup} /> }
         </div>
     )
 }

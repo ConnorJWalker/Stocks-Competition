@@ -1,0 +1,66 @@
+.auth-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 750px;
+    background-color: #fff;
+    margin-top: -100px;
+    padding: 35px;
+    box-sizing: border-box;
+}
+
+.form-group {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.text-input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-around;
+}
+
+.profile-picture {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+div.profile-picture {
+    border: 1px solid #E60050;
+    color: #E60050;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.colour-picker {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.colour-picker small {
+    color: #fff;
+    background-color: #5514B4;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 2px 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

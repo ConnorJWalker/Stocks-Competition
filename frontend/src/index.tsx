@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import reportWebVitals from './reportWebVitals'
 
+import Authentication from './views/authentication/authentication'
+
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 )
 root.render(
     <React.StrictMode>
-
+        <Authentication />
     </React.StrictMode>
 )
 

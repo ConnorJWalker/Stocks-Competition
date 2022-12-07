@@ -45,7 +45,6 @@ div.profile-picture {
 .colour-picker {
     width: 100px;
     height: 100px;
-    background-color: red;
     margin-left: 20px;
     cursor: pointer;
 }

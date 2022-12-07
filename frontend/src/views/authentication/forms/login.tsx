@@ -10,10 +10,9 @@ export default function Login(props: any) {
             </div>
 
             <footer>
-                <a href="#" onClick={() => props.SetShowSignup(true)}>Sign Up</a>
+                <button className="link" onClick={() => props.SetShowSignup(true)}>Sign Up</button>
                 <button className="btn-pink">Log In</button>
             </footer>
         </div>
-
     )
 }

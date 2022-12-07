@@ -42,3 +42,11 @@ button.btn-pink {
 button.btn-pink:hover, button.btn-pink:active {
     background-color: #c30d4c;
 }
+
+button.link {
+    padding: 0;
+    color: blue;
+    text-decoration: underline;
+    border: none;
+    font-size: 1em;
+}

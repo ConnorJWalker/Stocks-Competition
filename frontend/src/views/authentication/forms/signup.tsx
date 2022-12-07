@@ -32,7 +32,7 @@ export default function Signup(props: any) {
                 </div>
     
                 <footer>
-                    <a href="#"  onClick={() => props.SetShowSignup(false)}>Log In</a>
+                    <button className='link' onClick={() => props.SetShowSignup(false)}>Log In</button>
                     <button className="btn-pink" onClick={() => setPage(2)}>Next</button>
                 </footer>
             </div>
@@ -41,7 +41,7 @@ export default function Signup(props: any) {
 
     function renderProfilePicture() {
         return signupForm.profilePicture !== ''
-            ? <img className="profile-picture" src={signupForm.profilePicture} />
+            ? <img className="profile-picture" src={signupForm.profilePicture} alt={ `${signupForm.displayName}'s profile avatar` } />
             : <div className="profile-picture"><p>Picture</p></div> 
     }
 
@@ -50,7 +50,7 @@ export default function Signup(props: any) {
             <div className="form-container">
                 <h1>Freetrade Authentication Cookie</h1>
                 <ul>
-                    <li>Log into the Freetrade <a href="https://web.freetrade.io/login" target="_blank">web interface</a></li>
+                    <li>Log into the Freetrade <a href="https://web.freetrade.io/login" target="_blank" rel="noreferrer">web interface</a></li>
                     <li>Open your browsers dev tools and find cookies</li>
                     <li>Copy and paste the value of <code>ft_web_session</code> into the text area</li>
                 </ul>
@@ -58,7 +58,7 @@ export default function Signup(props: any) {
                 <textarea onChange={e => signupForm.freetradeCookie = e.target.value}></textarea>
     
                 <footer>
-                    <a href="#"  onClick={() => props.SetShowSignup(false)}>Log In</a>
+                    <button className="link" onClick={() => props.SetShowSignup(false)}>Log In</button>
                     
                     <div>
                         <button onClick={() => setPage(1)}>Back</button>

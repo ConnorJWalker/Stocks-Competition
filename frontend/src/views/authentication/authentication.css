@@ -5,13 +5,18 @@
     justify-content: space-around;
 }
 
-.form-container {
+.form-container, .validation-errors {
     width: 100%;
     max-width: 750px;
     background-color: #fff;
     margin-top: -100px;
     padding: 35px;
     box-sizing: border-box;
+}
+
+.validation-errors {
+    max-width: 350px;
+    width: unset;
 }
 
 h1 {

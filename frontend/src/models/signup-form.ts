@@ -5,7 +5,10 @@ export interface ISignupForm {
     displayColour: string
     password: string
     passwordConfirm: string
-    freetradeCookie: string 
+    freetradeCookie: string
+
+    errors: string[]
+    isValid(): boolean
 }
 
 export default function createSignupForm(): ISignupForm {
@@ -24,6 +27,22 @@ export default function createSignupForm(): ISignupForm {
         displayColour,
         password: '',
         passwordConfirm: '',
-        freetradeCookie: ''
+        freetradeCookie: '',
+        errors: [],
+
+        isValid() {
+            this.errors = []
+            
+            // Todo: validate discord username
+            if (!this.displayName) this.errors.push('Display name is required')
+            if (!this.discordUsername) this.errors.push('Discord username is required')
+            if (!this.password) this.errors.push('Password is required')
+
+            if (this.password !== this.passwordConfirm) {
+                this.errors.push('Passwords do not match')
+            }
+
+            return this.errors.length === 0
+        },
     }
 }

@@ -1,4 +1,4 @@
-export default interface SignupRequest {
+export default interface ISignupRequest {
     profilePicture: string
     displayName: string
     discordUsername: string
